@@ -6,6 +6,7 @@ export const cred = {
       "email": "demo.customer@hms.com",
       "name": "John Doe",
       "type": "customer",
+      "hotelId": "681a62d20f67208468642446",
       "createdAt": "2025-08-26T15:47:56.896Z",
       "updatedAt": "2025-08-26T15:47:56.896Z"
     }

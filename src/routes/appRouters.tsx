@@ -8,6 +8,7 @@ import BasePage from "../BasePage";
 import AboutMain from "../Pages/aboutPage/AboutMain";
 import ServiceCategoryPage from "../Pages/serviceCategoryPage/ServiceCategoryPage";
 import ProductPage from "../Pages/productPage/ProductPage";
+import OrdersMain from "../Pages/ordersPage/OrdersMain";
 
 // const secureRouteWrapper = (element: ReactElement): ReactElement => (
 //   <SecureRoute>{element}</SecureRoute>
@@ -38,6 +39,10 @@ export function AppRoutes() {
         {
           path: "/categories/:categoryId/services/:serviceId/products",
           element: <ProductPage />,
+        },
+        {
+          path: "/orders",
+          element: <OrdersMain />,
         }
       ],
     }

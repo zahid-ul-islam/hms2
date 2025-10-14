@@ -1,12 +1,19 @@
 // navbarItems.ts
 import { IconType } from "react-icons";
-import { Home, Info } from "lucide-react";
+import { Home, Info, User } from "lucide-react";
 
 interface INavItem {
   name: string;
   icon?: IconType; 
   link?: string; 
   title?: string; 
+  dropdown?: {
+    items: {
+      name: string;
+      link: string;
+      icon?: IconType;
+    }[];
+  };
 }
 
 export const navbarItems: INavItem[] = [
@@ -22,5 +29,18 @@ export const navbarItems: INavItem[] = [
     title: "About Us",
     link: "/about",
   },
-  
+  {
+    name: "Profile",
+    icon: User,
+    title: "Profile",
+    dropdown: {
+      items: [
+        {
+          name: "Your Orders",
+          link: "/orders",
+          icon: User,
+        },
+      ],
+    },
+  },
 ];
